@@ -1,0 +1,11 @@
+# aft-lane build receipt — 2026-11-11T15:44:44Z
+## lake build AFT
+Build completed successfully (641 jobs).
+## axiom check
+'AFT.mem_aft_bound' depends on axioms: [propext]
+'AFT.aft_bound_sound' depends on axioms: [propext]
+'AFT.fixedPoint_bounds_of_antitone' does not depend on any axioms
+'AFT.envUpper_mono' does not depend on any axioms
+'AFT.envLower_mono' does not depend on any axioms
+## banned-pattern scan
+(no tactic-level hits; 're-admits' docstring prose only)
