@@ -3,7 +3,7 @@
 Scoping + first construction for **road 3: Approximation Fixpoint Theory (AFT)** —
 the third road to finality in the lit-anneal Nov-03/04 distillate for certified-settling
 algorithms. Road 1 (per-event certification) and road 2 (global potential — banked as
-[bonifaci-lane](../bonifaci-lane/)) are the siblings.
+[bonifaci-lane](https://github.com/BigO-Hunter/bonifaci-lane)) are the siblings.
 
 **Why AFT fits the campaign:** our uncapped/speculative-update engine class (the
 speculative-iteration families in the SSSP/APSP work) settles under *non-monotone*
@@ -39,3 +39,17 @@ lock via `fcntl` since this host has no `flock` binary), receipts to `receipts/`
 
 Theory: Denecker–Marek–Truszczyński (AFT, 2000/2004); the practical refinement +
 branch-and-bound layer: Rasheed & Garg (2026). Formalization: this lane, 2026-11-11.
+
+## Why this repo is up
+
+Road-3 research lane: anytime guaranteed bounds (Approximation Fixpoint Theory) for the non-monotone speculative-update engine class where Knaster–Tarski fails — sibling of [bonifaci-lane](https://github.com/BigO-Hunter/bonifaci-lane) (road 2, global potential); road 1 is per-event certification.
+
+[BigO-Hunter](https://github.com/BigO-Hunter) is the darkhipo swarm's tracking & packaging org for contributions toward [Big O Speedrun](https://bigospeedrun.com) — a companion, never the project. Org story: [profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io).
+
+## What work can be done here
+
+M1 (`AFT/Basic.lean`) is built green. Next: M2 `AFT/Refine.lean` — refinement operator F, Lemma 5.3 (soundness preservation), Lemma 5.4 (shrinking), prune criterion; then the milestone map M3–M5 in the lane brief. Reproduction: `lake build AFT` against the campaign Mathlib pin (v4.34.1 / d13f23b7); swap-gated build discipline via `receipts/gated_build.py`.
+
+## License
+
+Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE). CFSF: copy-free (use for any purpose) and stays-free (nobody may fence this work). The name is unclaimed in software licensing (checked 2026-11-09) and is deliberately not "Copyfree" — the Copyfree Initiative's certification mark — since CFSF's anti-enclosure condition is excluded by their standard.
